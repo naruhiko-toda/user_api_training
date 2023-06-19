@@ -56,6 +56,7 @@ class TestUserController:
         "090-12341-111",
         "0900-12341-111",
         "0900-12341-11111",
+        "aaa-aaaa-aaaa",
     ]
     @pytest.mark.parametrize("tel", test_cases, ids=test_cases)
     def test_telは3桁4桁4桁のフォーマットでないとユーザー登録はできないこと(self, tel):
